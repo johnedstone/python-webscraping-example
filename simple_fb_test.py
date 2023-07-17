@@ -2,6 +2,10 @@
 """
 References:
     https://realpython.com/beautiful-soup-web-scraper-python/
+
+Changes:
+    17-July-2023: added HOST variable headers dictionary
+    17-July-2023: tested on 32bit raspberry pi
 """
 
 from requests_html import HTMLSession
