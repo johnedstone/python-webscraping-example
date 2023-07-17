@@ -4,9 +4,14 @@
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ### Simple script
-Simple example of scraping the words "Log In"
+Simple example of scraping the words "Log In" on Facebooks home page
 ```
-python simple_fb_test.py
+(.venv) $ python simple_fb_test.py 
+
+200
+<button class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" data-testid="royal_login_button" id="u_0_5_gE" name="login" type="submit" value="1">Log In</button>
+Log In
+
 ```
 ### Getting started coding
 
