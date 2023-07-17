@@ -1,6 +1,6 @@
 ### Reference
 * [Web Scraping with Beautiful Soup](https://realpython.com/beautiful-soup-web-scraper-python/)
-* [requests_html](https://github.com/kennethreitz/requests-html)
+* [requests-html](https://github.com/kennethreitz/requests-html)
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ### Simple script
