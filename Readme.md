@@ -1,8 +1,13 @@
 ### Reference
-* [Web Scraping with Beautiful Soup](https://realpython.com/beautiful-soup-web-scraper-python/#challenges-of-web-scraping)
+* [Web Scraping with Beautiful Soup](https://realpython.com/beautiful-soup-web-scraper-python/)
 * [requests_html](https://github.com/kennethreitz/requests-html)
-* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)
+* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
+### Simple script
+Simple example of scraping the words "Log In"
+```
+python simple_fb_test.py
+```
 ### Getting started coding
 
 ```
