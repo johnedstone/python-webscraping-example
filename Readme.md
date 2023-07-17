@@ -4,7 +4,7 @@
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ### Simple script
-Simple example of scraping the words "Log In" on Facebooks home page
+Simple example of scraping the words "Log In" on [Facebook's home page](https://www.facebook.com/)
 ```
 (.venv) $ python simple_fb_test.py 
 
