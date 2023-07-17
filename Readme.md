@@ -2,6 +2,7 @@
 * [Web Scraping with Beautiful Soup](https://realpython.com/beautiful-soup-web-scraper-python/)
 * [requests-html](https://github.com/kennethreitz/requests-html)
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+* [raspberry pi 32bit fix](https://stackoverflow.com/questions/66588194/requests-html-results-in-oserror-errno-8-exec-format-error-when-calling-html)
 
 ### Simple script
 Simple example of scraping the words "Log In" on [Facebook's home page](https://www.facebook.com/)
