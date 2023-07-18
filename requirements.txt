@@ -1,1 +1,5 @@
 requests-html
+# if using selenium, then use the following two
+#selenium
+#webdriver-manager
+
