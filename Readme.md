@@ -1,8 +1,15 @@
-### Reference
+### References
 * [Web Scraping with Beautiful Soup](https://realpython.com/beautiful-soup-web-scraper-python/)
-* [requests-html](https://github.com/kennethreitz/requests-html)
+* [requests-html code](https://github.com/kennethreitz/requests-html)
+* [requests-html documentation](https://requests.readthedocs.io/projects/requests-html/en/latest/)
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 * [raspberry pi 32bit fix](https://stackoverflow.com/questions/66588194/requests-html-results-in-oserror-errno-8-exec-format-error-when-calling-html)
+
+### Some notes about rendering
+* After reading a few selenium articles, [this blog](https://www.zenrows.com/blog/selenium-python-web-scraping#headless-chrome), and [this article](https://medium.com/ymedialabs-innovation/web-scraping-using-beautiful-soup-and-selenium-for-dynamic-page-2f8ad15efe25), it became clear that one should use the `sleep` parameter to give the page time to render.
+
+### Requests-HTML vs Selenium
+The following are notes for Requests-HTML.  See the Readme_Selenium.md for notes about getting started with Selenium
 
 ### Simple script
 Simple example of scraping the words "Log In" on [Facebook's home page](https://www.facebook.com/)
