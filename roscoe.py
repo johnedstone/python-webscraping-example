@@ -13,9 +13,10 @@ from pprint import pprint
 import sys
 
 HOST = '192.168.1.1'
-SCHEME = 'http'
-TIMEOUT = 30000 # milliseconds to get the page, 30000=30secs
-SLEEP = 30 # seconds to render the page (create the DOM)
+SCHEME = 'http'      # http or https
+TIMEOUT = 30000      # milliseconds to wait to load the page, 30000=30secs
+SLEEP = 30           # seconds to render the page (create the DOM)
+USE_HEADERS = False  # True or False
 
 headers = {
     'host': HOST,
@@ -27,7 +28,11 @@ headers = {
 }
 
 session = HTMLSession()
-r = session.get(SCHEME + '://' + HOST, headers=headers)
+
+if USE_HEADERS:
+    r = session.get(SCHEME + '://' + HOST, headers=headers)
+else:
+    r = session.get(SCHEME + '://' + HOST)
 
 print(r.status_code)
 
@@ -38,9 +43,16 @@ r.html.render(timeout=TIMEOUT, sleep=SLEEP)
 soup = BeautifulSoup(r.html.html, "html.parser")
 
 results = soup.find(string=re.compile('Enter'))
-pprint(results)
-
-results = soup.find('a', string=re.compile('^d+%$'))
 print(results)
+
+results = soup.find('a', string=re.compile('^\d+%$'))
+print(results)
+
+if results.string:
+    number_only = int(results.string.rstrip('%'))
+    if number_only > 50:
+        print(f'Great, you have {number_only}% battery left!')
+    else:
+        print(f'Yikes, you have only {number_only}% battery left!')
 
 # vim: ai et ts=4 sw=4 sts=4 nu
